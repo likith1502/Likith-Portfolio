@@ -77,53 +77,6 @@ The site is a single page that takes you through my work, experience and hackath
         └── projects/                   # Project cover images
 ```
 
-## Getting Started
-
-**Prerequisites:** Node.js 18 or later and npm.
-
-```bash
-# Clone the repository
-git clone https://github.com/likith1502/Likith-Portfolio.git
-cd Likith-Portfolio
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start the development server |
-| `npm run build` | Create an optimized production build |
-| `npm run start` | Serve the production build |
-| `npm run lint` | Run ESLint |
-
-## Deployment
-
-The site deploys on [Vercel](https://vercel.com) with zero configuration:
-
-1. Import this repository on Vercel.
-2. Click **Deploy**.
-
-Every push to `main` triggers a new deployment automatically.
-
-## Updating Content
-
-Most content lives in plain data arrays, so updates don't require touching layout code:
-
-- **Projects, experience, hackathons, leadership, education:** edit the `PROJECTS`, `EXPERIENCE`, `HACKATHONS`, `LEADERSHIP` and `EDUCATION` arrays in `components/likith-sections.tsx`.
-- **Name variants and hero text:** edit `NAME_VARIANTS` and the hero copy in `components/glass-hero.tsx`.
-- **Images:** replace files in `public/images/`. Hero layers should be 1920×1080 and pixel-aligned with each other; project covers work best at 1200×750.
-
-## Credits
-
-Design and layout are adapted from the open-source [glass portfolio](https://github.com/devendharoff/devendhar-glass-portfolio) by Devender Gopagoni. Content, sections and customizations are my own.
 
 ## Contact
 
