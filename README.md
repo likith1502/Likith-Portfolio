@@ -1,21 +1,64 @@
-# Talla Likith — Portfolio
+<div align="center">
+Talla Likith — Portfolio
 
-Applied AI Engineer & Full-Stack Builder · Hyderabad
+Applied AI Engineer · Full-Stack Builder · Hyderabad, India
 
-Built with Next.js 14, TypeScript, Tailwind CSS, GSAP ScrollTrigger and Lenis smooth scroll.
+A cinematic, scroll-driven personal portfolio built with Next.js 14, GSAP and Lenis.
 
-## Run locally
-```bash
-npm install
-npm run dev     # http://localhost:3000
-```
+Next.js TypeScript Tailwind CSS GSAP Vercel
 
-## Deploy
-Push to GitHub, import the repo on vercel.com, and click Deploy (no settings needed).
+Live Site · LinkedIn · GitHub · Email
 
-## Where to edit
-- `components/glass-hero.tsx` — header, hero (EN / HI / TE name), About, Approach, Tech Stack, Contact
-- `components/likith-sections.tsx` — Projects, Experience, Hackathons, Leadership & Education
-- `public/images/` — hero layers, About portrait, project covers
+</div>
+About
 
-Template credit: based on the open-source glass portfolio by Devender Gopagoni.
+This is the source code for my personal portfolio. I'm a Computer Science (AI & ML) undergraduate at SVIT, Hyderabad, and I build AI chatbots, voice agents and agent workflows, along with the full-stack systems that run them.
+
+The site is a single page that takes you through my work, experience and hackathon record, with smooth scrolling and motion throughout.
+
+Highlights
+Multilingual hero: my name cycles through English, Hindi and Telugu with line-by-line reveal animations.
+Cursor reveal portrait: a two-layer hero image with a radial mask that follows the cursor (or finger on mobile).
+Horizontal project showcase: a pinned section where vertical scrolling moves the project cards sideways, with a progress bar.
+Scroll-drawn experience timeline: the line draws itself as you scroll and each role slides into view.
+Hackathon record: animated count-up stats, achievement cards and a looping ticker.
+Smooth scrolling: Lenis synced with GSAP ScrollTrigger for consistent motion.
+Fully responsive: separate desktop and mobile animation paths through gsap.matchMedia.
+Sections
+#	Section	What it covers
+—	Hero	Name (EN / HI / TE), title, intro, social links
+01	About	Who I am, in first person, with key stats
+—	Approach	How I think about building with AI
+02	Selected Work	VOLTA AI Chatbot, PowerPool, ProjectHub, FindIt, DataGenius AI, ANPR Traffic Challan, CrewSpace
+03	Experience	Volta Cabs, Riksu, Single Point Solutions, Pilot Mobility, iSoftware Labs
+04	Tech Stack	AI & ML, backend, frontend, tools
+05	Hackathons	SIH 2023 Grand Finale, GDG Pixelverse Top 5, ISRO BAH 2026, Yuva Yodha 2026
+06	Beyond Code	Leadership (Synapse AIML Club, Techvani) and education
+—	Contact	Email, LinkedIn, GitHub
+Tech Stack
+Layer	Tools
+Framework	Next.js 14 (App Router), React 18, TypeScript
+Styling	Tailwind CSS, Google Fonts (Plus Jakarta Sans, JetBrains Mono, Noto Sans Devanagari, Noto Sans Telugu)
+Motion	GSAP + ScrollTrigger, Lenis smooth scroll, Framer Motion
+Deployment	Vercel
+Project Structure
+.
+├── app/
+│   ├── layout.tsx              # Root layout, fonts, metadata
+│   ├── page.tsx                # Page entry and SEO metadata
+│   └── globals.css             # Global styles and keyframes
+├── components/
+│   ├── glass-hero.tsx          # Header, hero, About, Approach, Tech Stack, Contact
+│   ├── likith-sections.tsx     # Projects, Experience, Hackathons, Beyond Code
+│   └── ui/                     # Shared UI pieces (magnetic button, cursor follower, ...)
+└── public/
+    └── images/
+        ├── Base_image_desktop.png      # Hero base layer
+        ├── Reveal_image_desktop.png    # Hero reveal layer
+        ├── about-portrait.jpg          # About section portrait
+        └── projects/                   # Project cover images
+Contact
+
+Talla Likith Email: likith.talla@svit.ac.in LinkedIn: linkedin.com/in/likith1502 GitHub: github.com/likith1502
+
+<div align="center"> <sub>© 2026 Talla Likith. Personal content, images and text are not licensed for reuse.</sub> </div>
